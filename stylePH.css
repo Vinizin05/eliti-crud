@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    text-align: center;
+}
+
+.cabeça{
+    text-align: center;
+    color:black;
+}
+
+
