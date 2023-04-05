@@ -28,8 +28,52 @@ body{
 }
 .Leb {
   display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+}
+.Leb div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+  border-radius: 50px;
+  height: 4vh;
+  width: 28px;
+  margin-right:10px;
+}
+header p {
+  margin-top: 1%;
+  margin-left: 3%;
+}
+.foot {
+  margin-right: 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.user {
+  background-color: green;
+  width: 100px;
+  height: 60px;
+  margin: 10px;
+}
+.ldm {
+  display:flex;
+}
+main {
+  background-color: rgba(196, 8, 124, 0.959);
+  height: 85vh;
+}
+footer {
+  background-color: yellow;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 img{
-  width: 80%;
+  width: 98.8%;
+  margin-left: 10px;
 }
 
