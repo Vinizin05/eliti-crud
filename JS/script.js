@@ -17,10 +17,6 @@ inputs.forEach((input) => {
   input.addEventListener("blur", remcl);
 });
 
-
-
-
-
-
-  
-
+function entrar() {
+  window.location.href = "/html/indexPH.html";
+}

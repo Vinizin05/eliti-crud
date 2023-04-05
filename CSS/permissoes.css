@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    min-height: 100vh;
+    display: flex;
+  }
+  .MenuL{
+    background: black;
+    height: 100vh;
+    width: 20%;
+    color: azure;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .menu p{
+    margin: 10px;
+  }
+  .perfil {
+    display:flex;
+    gap: 10px;
+  }
+
+  .cbç{
+    padding-left: 15px;
+  }
+  img{
+    width: 90%;
+    
+  }
+  
