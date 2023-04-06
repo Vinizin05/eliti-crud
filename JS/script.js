@@ -20,3 +20,5 @@ inputs.forEach((input) => {
 function entrar() {
   window.location.href = "/html/indexPH.html";
 }
+
+
