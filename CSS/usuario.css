@@ -62,10 +62,19 @@ header p {
   border: 3px solid black;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;    
 }
 .ldm {
-  display:flex;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+  border-radius: 50px;
+  height: 4vh;
+  width: 28px;
+  margin-right:10px;
+}
 }
 
 main {
