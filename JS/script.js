@@ -18,7 +18,7 @@ inputs.forEach((input) => {
 });
 
 function entrar() {
-  window.location.href = "/html/usuario.html"
+  window.location.href = "/html/usuario.html";
 }
 
 
