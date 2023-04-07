@@ -23,14 +23,40 @@ body{
   align-items: center;
   justify-content: center;
 }
-.topicos p {
+.topicos a {
   margin: 10px;
+  color: white;
+  text-decoration: none;
+  
 }
 .baixo {
   display:flex;
   justify-content: center;
   align-items: center;
   margin: 10%;
+}
+
+header p {
+  margin-top: 1%;
+  margin-left: 3.5%;
+  font-size: 20px;
+}
+.cbç {
+  margin-right: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between; 
+}
+
+.cbç a {
+  color: black;
+}
+
+img{
+  width: 92.8%;
+  margin-left: 10px;
+  display: flex;
+  margin :auto
 }
 .icon{
   display: flex;
@@ -42,17 +68,6 @@ body{
   height: 4vh;
   width: 28px;
   margin-right:10px;
-}
-header p {
-  margin-top: 1%;
-  margin-left: 3.5%;
-  font-size: 12px;
-}
-.foot {
-  margin-right: 10px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between; 
 }
 #user {
   background-color: rgb(255, 255, 255); 
@@ -66,7 +81,7 @@ header p {
   align-items: center;
 
 }
-.rd{
+.perfil{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,30 +91,41 @@ header p {
   border-radius: 50px;
 }
 
+.perfil i {
+  color: white;
+}
 
-.user-profile{
+.usuario{
   display: flex;
   flex-direction: column;
   border-radius: 10px;
 
 }
-.ldm {
+
+.conteudo {
   display: flex;
 }
+
 main {
   background-color: rgba(253, 252, 253, 0.959);
   height: 85vh;
 }
+
 footer {
   margin-right: 10px;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 10px;
 }
-img{
-  width: 92.8%;
-  margin-left: 10px;
-  display: flex;
-  margin :auto
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+footer :hover {
+   transition: 0.5s;
+   color: gray;
 }
