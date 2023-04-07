@@ -62,10 +62,13 @@ header p {
   border: 3px solid black;
   display: flex;
   justify-content: center;  
+  justify-content: center;
+  align-items: center;  
 }
 .ldm {
-  display:flex;
+  display:flex;  
 }
+
 main {
   background-color: rgba(253, 252, 253, 0.959);
   height: 85vh;
