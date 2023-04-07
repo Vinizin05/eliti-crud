@@ -75,7 +75,22 @@ header p {
   width: 30px;
   border-radius: 50px;
 }
+.usuario{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
 
+}
+.perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+  }
 
 .user-profile{
   display: flex;
