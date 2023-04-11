@@ -25,12 +25,7 @@ body{
 }
 .esquerdo p{
   margin: 10px;
-}
-.Leb {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10%;
+
 }
 .Leb div{
   display: flex;

@@ -22,6 +22,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+<<<<<<< Updated upstream
   }
   .esquerdo p{
     margin: 10px;
@@ -86,3 +87,6 @@
     margin :auto
   }
   
+=======
+  }
+>>>>>>> Stashed changes
