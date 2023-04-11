@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    min-height: 100vh;
+    display: flex;
+  }
+  .Le{
+    background: black;
+    height: 100vh;
+    width: 20%;
+    color: azure;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .esquerdo{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .esquerdo p{
+    margin: 10px;
+  }
+  .Leb {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+  }
+  .Leb div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    height: 4vh;
+    width: 28px;
+    margin-right:10px;
+  }
+  header p {
+    margin-top: 1%;
+    margin-left: 3%;
+  }
+  .foot {
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; 
+  }
+  .user {
+    background-color: rgb(252, 252, 251); 
+    width: 145px;
+    height: 85px;
+    margin: 65px;
+    border-radius: 25px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
+  .ldm {
+    display:flex;  
+  }
+  
+  main {
+    background-color: rgba(253, 252, 253, 0.959);
+    height: 85vh;
+  }
+  footer {
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  img{
+    width: 92.8%;
+    margin-left: 10px;
+    display: flex;
+    margin :auto
+  }
+  
