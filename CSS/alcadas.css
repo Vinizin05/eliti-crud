@@ -1,88 +1,162 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  body{
-    min-height: 100vh;
-    display: flex;
-  }
-  .Le{
-    background: black;
-    height: 100vh;
-    width: 20%;
-    color: azure;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .esquerdo{
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .esquerdo p{
-    margin: 10px;
-  }
-  .Leb {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10%;
-  }
-  .Leb div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-color: white;
-    border-radius: 50px;
-    height: 4vh;
-    width: 28px;
-    margin-right:10px;
-  }
-  header p {
-    margin-top: 1%;
-    margin-left: 3%;
-  }
-  .foot {
-    margin-right: 10px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between; 
-  }
-  .user {
-    background-color: rgb(252, 252, 251); 
-    width: 145px;
-    height: 85px;
-    margin: 65px;
-    border-radius: 25px;
-    border: 3px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-  }
-  .ldm {
-    display:flex;  
-  }
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+}
+.menu{
+  background: black;
+  height: 100vh;
+  width: 20%;
+  color: azure;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.topicos{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.topicos a {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
   
-  main {
-    background-color: rgba(253, 252, 253, 0.959);
-    height: 85vh;
-  }
-  footer {
-    margin-right: 10px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  img{
-    width: 92.8%;
-    margin-left: 10px;
-    display: flex;
-    margin :auto
-  }
-  
+}
+.baixo {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+}
+
+header p {
+  margin-top: 1%;
+  margin-left: 3.5%;
+  font-size: 20px;
+}
+.cbç {
+  margin-right: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between; 
+}
+
+.cbç a {
+  color: black;
+}
+
+img{
+  width: 92.8%;
+  margin-left: 10px;
+  display: flex;
+  margin :auto
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+  border-radius: 50px;  
+  height: 4vh;
+  width: 28px;
+  margin-right:10px;
+}
+#user {
+  background-color: rgb(255, 255, 255); 
+  width: 205px;
+  height: 245px;
+  margin: 40px;
+  border-radius: 25px;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.perfil{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+}
+
+.perfil i {
+  color: white;
+}
+
+.usuario{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+
+}
+
+.conteudo {
+  display: flex;
+}
+
+main {
+  background-color: rgba(253, 252, 253, 0.959);
+  height: 85vh;
+}
+
+footer {
+  margin-right: 10px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+footer a {
+  color: black;
+}
+
+/* Green glow checkbox made by: csozi | Website: www.csozi.hu*/
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 10px;
+  user-select: none;
+  background-color: #676767;
+  padding: 4px;
+  border-radius: 25px;
+}
+
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 1.3em;
+  border-radius: 1rem;
+  background-color: #ce0505;
+  transition: 0.1s;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #00de00;
+  box-shadow: 0 0 10px #00ff00;
+}
