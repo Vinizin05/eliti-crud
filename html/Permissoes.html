@@ -78,9 +78,31 @@
         </main>
 
         <footer >
-           <a href="" target="_blank" rel=""> <P>Adiconar Usuário</P> </a>
-           <a href="" target="_blank" rel="">   <i class="fa-solid fa-plus"></i></a>
+            <button class="btnOpenModal" onclick="openModal()">Adicionar permissoes</button >
+
+                <div class="contêiner modal">
+                  <div class="modal">
+                    <palmo>
+              
+                    </palmo>
+                    <div class="btns">
+                      <button class="btnOK" onclick="closeModal()">OK</button >
+                      <button class="btnClose" onclick="closeModal()">Close</button >
+                    </Div>
+                  </Div>
+                </Div>
         </footer>
     </section>
 </body>
+<script src="/JS/scriptPH.js">
+    const modal = document.querySelector('.modal-container')
 
+function openModal() {
+  modal.classList.add('active')
+}
+
+function closeModal() {
+  modal.classList.remove('active')
+}
+</script>
+</html>

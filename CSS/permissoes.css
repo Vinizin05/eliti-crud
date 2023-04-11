@@ -129,3 +129,52 @@ footer :hover {
    transition: 0.5s;
    color: gray;
 }
+
+.btnOpenModal {
+  font-size: 20px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.modal-container {
+  justify-content: center;
+}
+
+.active {
+  display: flex;
+}
+
+.active .modal {
+  animation: modal .4s;
+}
+
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns button {
+  font-size: medium;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btnOK {
+ background-color: black;
+}
+
+.btnClose {
+  background-color: black;
+ }
+
+ 
