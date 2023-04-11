@@ -14,9 +14,9 @@
     <section class="menu">  
 
         <div class="topicos">
-            <a href="/html/usuario.html" target="_blank" rel=""><p>| Usuários |</p></a>
-            <a href="/html/alcadas.html" target="_blank" rel=""><p>| Alçadas |</p></a>
-            <a href="/html/Permissoes.html" target="_blank" rel=""><p>| Permissões |</p></a>
+            <a href="/html/usuario.html"  rel=""><p>| Usuários |</p></a>
+            <a href="/html/alcadas.html"  rel=""><p>| Alçadas |</p></a>
+            <a href="/html/Permissoes.html" rel=""><p>| Permissões |</p></a>
         </div>
 
         <div class="baixo">
@@ -38,13 +38,32 @@
         </header>
         <main>
             <section class="conteudo">
-                <div class="usuario" id="user">
-                     <p>Kauan</p>
 
+                <div class="usuario" id="user">
+                    
+                    <div class="nome">
+                        <p>kauan</p>
+                    </div>
                     <div class="perfil">
+
                         <i class="fa-solid fa-user" ></i>
                     </div>
+                    <label class="container">
+                        <input type="checkbox" checked="checked">
+                        <div class="checkmark"></div>
+                      </label>
 
+                      <label class="container">
+                        <input type="checkbox" checked="checked">
+                        <div class="checkmark"></div>
+                      </label>
+
+                      <label class="container">
+                        <input type="checkbox" checked="checked">
+                        <div class="checkmark"></div>
+                      </label>
+                    
+                    
                 </div>
 
                 <div class="usuario" id="user">
@@ -78,31 +97,50 @@
         </main>
 
         <footer >
-            <button class="btnOpenModal" onclick="openModal()">Adicionar permissoes</button >
+            <div class="caixa">
+             <span class="pop">permissões</span>
 
-                <div class="contêiner modal">
-                  <div class="modal">
-                    <palmo>
-              
-                    </palmo>
-                    <div class="btns">
-                      <button class="btnOK" onclick="closeModal()">OK</button >
-                      <button class="btnClose" onclick="closeModal()">Close</button >
-                    </Div>
-                  </Div>
-                </Div>
+            </div>
+
+            <div>
+                <input type="checkbox" name="exem" id="exem">
+            </div>
+            <div>
+                <input type="checkbox" name="exem" id="exem">
+            </div>
+            <div>
+                <input type="checkbox" name="exem" id="exem">
+            </div>
+            <div>
+                <input type="checkbox" name="exem" id="exem">
+            </div>
+            <div>
+                <input type="checkbox" name="exem" id="exem">
+            </div>
+            <div>
+                <input type="checkbox" name="exem" id="exem">
+            </div>
+            <div>
+                <input type="checkbox" name="exem" id="exem">
+            </div>
+            <div>
+                <input type="checkbox" name="exem" id="exem">
+            </div>
+            <div>
+                <input type="checkbox" name="exem" id="exem">
+            </div>
+            <div>
+                <input type="checkbox" name="exem" id="exem">
+            </div>
+            <div>
+                <input type="checkbox" name="exem" id="exem">
+            </div>
+            <div>
+                <input type="checkbox" name="exem" id="exem">
+            </div>
         </footer>
     </section>
 </body>
 <script src="/JS/scriptPH.js">
-    const modal = document.querySelector('.modal-container')
-
-function openModal() {
-  modal.classList.add('active')
-}
-
-function closeModal() {
-  modal.classList.remove('active')
-}
 </script>
 </html>
