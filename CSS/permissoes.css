@@ -58,6 +58,7 @@ img{
   display: flex;
   margin :auto
 }
+
 .icon{
   display: flex;
   justify-content: center;
@@ -69,16 +70,15 @@ img{
   width: 28px;
   margin-right:10px;
 }
-#user {
+
+.usuario{
+  border-radius: 10px;
   background-color: rgb(255, 255, 255); 
   width: 205px;
   height: 245px;
   margin: 40px;
   border-radius: 25px;
   border: 3px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
 }
 .perfil{
@@ -95,12 +95,23 @@ img{
   color: white;
 }
 
-.usuario{
+.titulo{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.checkboxs{
+  display: flex;
+  justify-content: center;
   flex-direction: column;
-  border-radius: 10px;
+  width: 21px;
+  gap: 5px;
 
 }
+
 
 .conteudo {
   display: flex;
@@ -146,6 +157,7 @@ footer a {
 }
 
 .checkmark {
+  display: flex;
   position: relative;
   top: 0;
   left: 0;
