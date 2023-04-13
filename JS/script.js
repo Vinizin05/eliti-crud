@@ -20,23 +20,30 @@ inputs.forEach((input) => {
   input.addEventListener("blur", remFocus);
 });
 
-// redirecionamento de pagina
-function entrar() {
-  var email = document.querySelector(".gmail");
-  var senha = document.querySelector(".password");
 
-  if (email.value == "admin@gmail.com" && senha.value == "admin") { 
-    localStorage.setItem("acesso", true);
+
+
+
+
+
+
+
+function entrar() {
+  var email = document.querySelector("#email");
+  var senha = document.querySelector("#passwd");
+
+  if (email.value == "admin@gmail.com" && senha.value == "admin"){
+    let novoUsuario;
+    novoUsuario = 
+    {
+    'email': 'admin@gmail.com',
+    'password':'admin'
+  }
+    localStorage.setItem("users", JSON.stringify(novoUsuario));
 
     window.location.href = "/html/usuario.html";
-
   } else {
-    alert("Email ou Senha nao cadastrados")
+    alert("Email ou Senha nao cadastrados");
   }
-  
-
-    
-
+  console.log(email, senha);
 }
-  
-  
