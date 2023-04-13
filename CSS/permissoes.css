@@ -107,7 +107,7 @@ img{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 21px;
+  margin-right: 50%;
   gap: 5px;
 
 }
@@ -115,6 +115,7 @@ img{
 
 .conteudo {
   display: flex;
+  flex-direction: row;
 }
 
 main {
