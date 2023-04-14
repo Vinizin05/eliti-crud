@@ -23,10 +23,7 @@ inputs.forEach((input) => {
 
 
 
-
-
-
-
+//Salvando dados para fazer login
 
 function entrar() {
   var email = document.querySelector("#email");
@@ -45,5 +42,5 @@ function entrar() {
   } else {
     alert("Email ou Senha nao cadastrados");
   }
-  console.log(email, senha);
+  // console.log(email, senha);
 }
