@@ -25,6 +25,7 @@
         <form action="" id="login">
           <img src="/img-icons/avatar.jpg" />
           <h2 class="title">Bem-vindo</h2>
+
           <!-- input email  -->
           <div class="input-div email">
             <div class="i">
@@ -32,9 +33,10 @@
             </div>
             <div class="div">
               <h5>Email</h5>
-              <input id="email" type="text" class="input" />
+              <input id="email" type="text" class="input" required/>
             </div>
           </div>
+
           <!-- input senha -->
           <div class="input-div senha">
             <div class="i">
@@ -42,12 +44,12 @@
             </div>
             <div class="div">
               <h5>Senha</h5>
-              <input id="passwd" type="password" class="input" />
+              <input id="passwd" type="password" class="input" required/>
             </div>
           </div>
 
           <a href="/html/addUser.html">Não tem uma conta? Crie aqui</a>
-          <input type="button" class="btn" value="entrar" onclick="entrar()" />
+          <input type="button" class="btn botao" value="entrar" onclick="entrar()" />
         </form>
       </div>
     </div>
