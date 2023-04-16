@@ -25,12 +25,7 @@ body{
 }
 .esquerdo p{
   margin: 10px;
-}
-.Leb {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10%;
+
 }
 .Leb div{
   display: flex;
@@ -55,7 +50,7 @@ header p {
   justify-content: space-between; 
 }
 
-#user {
+.user {
   background-color: rgb(255, 255, 255); 
   width: 145px;
   height: 85px;
@@ -65,7 +60,8 @@ header p {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  flex-direction: column;
+  border-radius: 10px;
 }
 .rd{
   display: flex;
@@ -77,9 +73,6 @@ header p {
   border-radius: 50px;
 }
 .usuario{
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
 
 }
 .perfil{
