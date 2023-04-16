@@ -44,3 +44,12 @@ function entrar() {
   }
   // console.log(email, senha);
 }
+
+
+function addUser() {
+
+  
+
+
+
+}
