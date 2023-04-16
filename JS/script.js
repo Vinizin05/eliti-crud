@@ -20,22 +20,18 @@ inputs.forEach((input) => {
   input.addEventListener("blur", remFocus);
 });
 
-
-
-
 //Salvando dados para fazer login
 
 function entrar() {
   var email = document.querySelector("#email");
   var senha = document.querySelector("#passwd");
 
-  if (email.value == "admin@gmail.com" && senha.value == "admin"){
+  if (email.value == "admin@gmail.com" && senha.value == "admin") {
     let novoUsuario;
-    novoUsuario = 
-    {
-    'email': 'admin@gmail.com',
-    'password':'admin'
-  }
+    novoUsuario = {
+      email: "admin@gmail.com",
+      password: "admin",
+    };
     localStorage.setItem("users", JSON.stringify(novoUsuario));
 
     window.location.href = "/html/usuario.html";
@@ -46,10 +42,17 @@ function entrar() {
 }
 
 
-function addUser() {
+// Entrar com Enter
+document.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    var btn = document.querySelector(".botao");
 
-  
+    btn.click();
+  }
+});
 
 
 
-}
+// function addUser() {
+
+// }
