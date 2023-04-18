@@ -20,6 +20,9 @@ inputs.forEach((input) => {
   input.addEventListener("blur", remFocus);
 });
 
+
+
+
 //Salvando dados para fazer login
 
 function entrar() {
