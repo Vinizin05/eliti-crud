@@ -12,6 +12,12 @@ body {
     text-align: center;
 }
 
+a {
+  text-align: left;
+  margin: -5px  ;
+}
+
+
 .form-box {
     max-width: 300px;
     background: #f1f7fe;
