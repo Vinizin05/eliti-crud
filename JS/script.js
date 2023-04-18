@@ -53,6 +53,8 @@ document.addEventListener("keypress", function (e) {
 
 
 
-// function addUser() {
+// function Cadastrar() {
+
+
 
 // }
