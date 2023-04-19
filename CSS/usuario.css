@@ -41,7 +41,7 @@ body{
 header p {
   margin-top: 1%;
   margin-left: 3.5%;
-  font-size: 12px;
+  font-size: 18px;
 }
 .foot {
   margin-right: 10px;
@@ -73,7 +73,7 @@ header p {
   border-radius: 50px;
 }
 .usuario{
-   
+
 }
 .perfil{
     display: flex;
@@ -81,7 +81,7 @@ header p {
     align-items: center;
     background-color: black;
     color: white;
-    zheight: 30px;
+    height: 30px;
     width: 30px;
     border-radius: 50px;
   }
@@ -110,14 +110,13 @@ img{
   width: 92.8%;
   margin-left: 10px;
   display: flex;
-  margin: right 10px;
- 
-
+  margin :auto
 }
 
 button {
-  font-size: 18px;
-  letter-spacing: 2px;
+  font-size: 15px;
+  letter-spacing: 1
+  px;
   text-transform: uppercase;
   display: inline-block;
   text-align: center;
@@ -159,8 +158,4 @@ button:hover:before, button:focus:before {
 
 button:active {
   transform: scale(0.9);
-}
-
-.leb {
-  background-color: red;
 }
