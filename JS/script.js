@@ -56,8 +56,4 @@ document.addEventListener("keypress", function (e) {
 
 
 
-// function Cadastrar() {
 
-
-
-// }

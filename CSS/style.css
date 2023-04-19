@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /*deixa os elementos no seu tamanho padrao*/
 }
 
 body {
@@ -9,7 +9,7 @@ body {
   overflow: hidden;
 }
 
-.wave {
+.image {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -32,7 +32,7 @@ body {
   align-items: center;
 }
 
-.login-content {
+.conteudo-login {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -47,18 +47,18 @@ form {
   width: 360px;
 }
 
-.login-content img {
+.conteudo-login img {
   height: 100px;
 }
 
-.login-content h2 {
+.conteudo-login h2 {
   margin: 15px 0;
   color: #333;
   text-transform: uppercase;
   font-size: 2.9rem;
 }
 
-.login-content .input-div {
+.conteudo-login .input-div {
   position: relative;
   display: grid;
   grid-template-columns: 7% 93%;
@@ -67,7 +67,7 @@ form {
   border-bottom: 2px solid #d9d9d9;
 }
 
-.login-content .input-div.email {
+.conteudo-login .input-div.email {
   margin-top: 0;
 }
 
@@ -194,7 +194,7 @@ a:hover {
     width: 290px;
   }
 
-  .login-content h2 {
+  .conteudo-login h2 {
     font-size: 2.4rem;
     margin: 8px 0;
   }
@@ -218,7 +218,7 @@ a:hover {
     color: #000;
   }
 
-  .login-content {
+  .conteudo-login {
     justify-content: center;
   }
 }
