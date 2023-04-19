@@ -37,7 +37,7 @@ body{
 }
 
 header p {
-  margin-top: %;
+  margin-top: 2%;
   margin-left: 3.5%;
   font-size: 18px;
 }
@@ -250,7 +250,7 @@ button:active {
 .leb {
   background-color: red;
 }
-}
+
 
 button:active {
   transform: scale(0.9);
