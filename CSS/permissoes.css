@@ -33,19 +33,24 @@ body{
   display:flex;
   justify-content: center;
   align-items: center;
-  margin: 10%;
+  margin: 5%;
 }
 
 header p {
-  margin-top: 2%;
-  margin-left: 3.5%;
-  font-size: 18px;
+  margin-top: 1%;
+  margin-left: 2%;
+  margin-bottom: 1px;
+  font-size: 18
+  px;
 }
 .cbç {
-  margin-right: 10px;
+  margin-right:10px;
+  margin-left: 20px;
+  margin-bottom:;
   display: flex;
   align-items: flex-end;
   justify-content: space-between; 
+
 }
 
 .cbç a {
@@ -72,14 +77,22 @@ img{
 }
 
 .usuario{
-  border-radius: 10px;
+
+
   background-color: rgb(255, 255, 255); 
   width: 205px;
   height: 245px;
-  margin: 20px;
+  margin: 80px;
   border-radius: 25px;
   border: 3px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+  flex-direction: column;
+  border-radius: 20px;
 
+
+ 
 }
 
 .perfil{
@@ -192,7 +205,6 @@ footer a {
   border-color: #4d4d4d;
 }
 
-
 button {
   font-size: 15px;
   letter-spacing: 1px;
@@ -209,6 +221,7 @@ button {
   text-decoration: none;
   transition: 0.3s ease all;
   z-index: 1;
+  margin: -5
 }
 
 button:before {
@@ -240,15 +253,7 @@ button:active {
 }
 
 .leb {
-  background-color: red;
-}
-
-button:active {
-  transform: scale(0.9);
-}
-
-.leb {
-  background-color: red;
+  background-color: rgb(26, 6, 6);
 }
 
 

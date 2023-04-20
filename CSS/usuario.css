@@ -129,7 +129,7 @@ button {
   color: #0a0a0a;
   text-decoration: none;
   transition: 0.3s ease all;
-  z-index: 1;
+   margin: -5px;
 }
 
 button:before {
