@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="/CSS/addUser.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-    />
-    <link
-      rel="shortcut icon"
-      href="/img-icons/favicon.png"
-      type="image/x-icon"
-    />
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/addUser.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+  <link rel="shortcut icon" href="/img-icons/favicon.png" type="image/x-icon"/>
+  <title>cadastro de usuarios</title>
+</head>
   <body>
     <div class="form-box">
       <form class="form">
@@ -20,28 +16,23 @@
         <span class="title">Cadastre-se</span>
         <span class="texto">Crie sua conta aqui </span>
         <div class="form-container">
-          <input type="text" class="input" required="" placeholder="Nome" />
+          <input type="text" class="input" id="nome" placeholder="Nome" />
 
-          <input type="email" class="input" required="" placeholder="Email" />
+          <input type="email" class="input" id="email" placeholder="Email" />
 
-          <input
-            type="password"
-            class="input"
-            required=""
-            placeholder="Senha"
+          <input type="password" class="input" id="senha" placeholder="Senha"
           />
         </div>
-        <button>Cadastrar</button>
+        <button onclick="cadastrar()">Cadastrar</button>
       </form>
       <div class="form-section">
         <p>
-          Tem conta cadastrada? Clique aqui
-          <a href="/html/index.html"> Entrar</a>
+          Tem conta cadastrada?
+          <a href="/html/index.html" style="text-decoration: none; margin: 1px;">Entre aqui</a>
         </p>
       </div>
     </div>
-    <script src="/JS/script.js"></script>
+    <script src="/JS/addUser.js"></script>
   </body>
 </html>
 
-<!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css -->

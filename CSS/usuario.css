@@ -41,7 +41,7 @@ body{
 header p {
   margin-top: 1%;
   margin-left: 3.5%;
-  font-size: 12px;
+  font-size: 16px;
 }
 .foot {
   margin-right: 10px;
@@ -110,14 +110,13 @@ img{
   width: 92.8%;
   margin-left: 10px;
   display: flex;
-  margin: right 10px;
- 
-
+  margin :auto
 }
 
 button {
-  font-size: 18px;
-  letter-spacing: 2px;
+  font-size: 15px;
+  letter-spacing: 1
+  px;
   text-transform: uppercase;
   display: inline-block;
   text-align: center;
@@ -130,7 +129,7 @@ button {
   color: #0a0a0a;
   text-decoration: none;
   transition: 0.3s ease all;
-  z-index: 1;
+   margin: -5px;
 }
 
 button:before {
@@ -159,8 +158,4 @@ button:hover:before, button:focus:before {
 
 button:active {
   transform: scale(0.9);
-}
-
-.leb {
-  background-color: red;
 }
