@@ -1,3 +1,7 @@
+const nome = document.querySelector("#nome")
+const email = document.querySelector("#email")
+const senha = document.querySelector("#senha")
+
 
 function cadastrar(){
     const nome = document.querySelector("#nome")
@@ -14,3 +18,5 @@ function cadastrar(){
 
     localStorage.setItem('listarUser', JSON.stringify(listaUser))
 }
+    
+
