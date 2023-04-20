@@ -2,6 +2,10 @@
 // const email = document.querySelector("#email")
 // const senha = document.querySelector("#senha")
 
+window.onload = function (){
+    exibirDados();
+  }
+
 
 function cadastrar(){
     const nome = document.querySelector("#nome")
@@ -28,7 +32,8 @@ function cadastrar(){
         }]
     }
     localStorage.setItem('listaUser', JSON.stringify(novoUsuario))
-
 }
-    
 
+function exibirDados() {
+    document.body.querySelector("#minhadiv").innerHTML = localStorage.getItem('listaUser');
+}
