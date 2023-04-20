@@ -27,7 +27,7 @@ body{
   margin: 10px;
 
 }
-.Leb div{
+.i{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,6 +37,9 @@ body{
   height: 4vh;
   width: 28px;
   margin-right:10px;
+}
+.Leb{
+  display: flex
 }
 header p {
   margin-top: 1%;
@@ -71,10 +74,9 @@ header p {
   height: 30px;
   width: 30px;
   border-radius: 50px;
-}
-.usuario{
 
 }
+
 .perfil{
     display: flex;
     justify-content: center;
@@ -94,6 +96,7 @@ header p {
 }
 .ldm {
   display: flex;
+  
 }
 main {
   background-color: rgba(253, 252, 253, 0.959);
@@ -113,7 +116,7 @@ img{
   margin :auto
 }
 
-button {
+button {display: flex;
   font-size: 15px;
   letter-spacing: 1
   px;
