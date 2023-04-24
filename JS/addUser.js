@@ -35,5 +35,15 @@ function cadastrar(){
 }
 
 function exibirDados() {
-    document.body.querySelector("#minhadiv").innerHTML = localStorage.getItem('listaUser');
+    const novoUsuario = JSON.parse(localStorage.getItem('listaUser'));
+
+    if (novoUsuario && novoUsuario.length > 0) {
+        const nome = novoUsuario[novoUsuario.length - 1].nome;
+        const paragrafo = document.createElement('p');
+        paragrafo.textContent = nome;
+        document.querySelector('#usuario').appendChild(paragrafo);
+    } else {
+        document.querySelector('#usuario').textContent = 'Nenhum usuário cadastrado';
+    }
 }
+
