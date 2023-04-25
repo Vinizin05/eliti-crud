@@ -13,10 +13,9 @@ function cadastrar(){
     const senha = document.querySelector("#senha")
     let listaUserStorage = JSON.parse(localStorage.getItem('listaUser'))
 
-    let novoUsuario;
+    let novoUsuario
 
     if(listaUserStorage){
-        console.log("entrou no if")
         novoUsuario = [...listaUserStorage, {
             'nome': nome.value,
             'email': email.value,
@@ -24,7 +23,6 @@ function cadastrar(){
         }]
     }
     else {
-        console.log("entrou no else")
         novoUsuario = [{
             'nome': nome.value,
             'email': email.value,
@@ -41,9 +39,9 @@ function exibirDados() {
         const nome = novoUsuario[novoUsuario.length - 1].nome;
         const paragrafo = document.createElement('p');
         paragrafo.textContent = nome;
-        document.querySelector('#usuario').appendChild(paragrafo);
+        document.querySelector('.user').appendChild(paragrafo);
     } else {
-        document.querySelector('#usuario').textContent = 'Nenhum usuário cadastrado';
+        document.querySelector('.user').textContent = 'Nenhum usuário cadastrado';
     }
 }
 
