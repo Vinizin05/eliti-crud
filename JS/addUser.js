@@ -1,43 +1,60 @@
+
 window.onload = function (){
+    listaUserStorage = JSON.parse(localStorage.getItem('listaUser'));
     exibirDados();
-  }
+}
 
 
 function cadastrar(){
     const nome = document.querySelector("#nome")
     const email = document.querySelector("#email")
     const senha = document.querySelector("#senha")
-    let listaUserStorage = JSON.parse(localStorage.getItem('listaUser'))
+    let listaUserStorage = JSON.parse(localStorage.getItem('listaUser')) || [{
+        'nome': "Carlos",
+        'email': "carlos@gmail.com",
+        'senha': "12345678"
+    }]
 
-    let novoUsuario
+    let novoUsuario = {
+        'nome': nome.value,
+        'email': email.value,
+        'senha': senha.value
+    }
+    
+    if(nome && email && senha){
+        listaUserStorage.push(novoUsuario)
+        localStorage.setItem('listaUser', JSON.stringify(listaUserStorage))
+    } else alert("incorreto")
 
-    if(listaUserStorage){
-        novoUsuario = [...listaUserStorage, {
-            'nome': nome.value,
-            'email': email.value,
-            'senha': senha.value
-        }]
-    }
-    else {
-        novoUsuario = [{
-            'nome': nome.value,
-            'email': email.value,
-            'senha': senha.value
-        }]
-    }
-    localStorage.setItem('listaUser', JSON.stringify(novoUsuario))
 }
 
 function exibirDados() {
-    const novoUsuario = JSON.parse(localStorage.getItem('listaUser'));
 
-    if (novoUsuario && novoUsuario.length > 0) {
-        const nome = novoUsuario[novoUsuario.length - 1].nome;
-        const paragrafo = document.createElement('p');
-        paragrafo.textContent = nome;
-        document.querySelector('.user').appendChild(paragrafo);
+    const usuarios = JSON.parse(localStorage.getItem('listaUser'));
+
+    const divUsuarios = document.querySelector('.usuarios')
+
+
+    if (usuarios) {
+        for(const usuario of usuarios) {
+            const nome = usuario.nome;
+            const paragrafo = document.createElement('p');
+            paragrafo.textContent = nome;
+    
+            const novoUsuarioDiv = document.createElement('div');
+            novoUsuarioDiv.appendChild(paragrafo)
+            novoUsuarioDiv.className = 'user'
+
+            divUsuarios.appendChild(novoUsuarioDiv)
+        }
+    
     } else {
         document.querySelector('.user').textContent = 'Nenhum usuário cadastrado';
     }
 }
+
+
+    
+
+
 

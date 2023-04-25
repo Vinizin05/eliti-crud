@@ -57,7 +57,7 @@ header p {
   background-color: rgb(255, 255, 255); 
   width: 145px;
   height: 85px;
-  margin: 65px;
+  margin: 30px;
   border-radius: 25px;
   border: 3px solid black;
   display: flex;
@@ -118,8 +118,7 @@ img{
 
 button {display: flex;
   font-size: 15px;
-  letter-spacing: 1
-  px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   display: inline-block;
   text-align: center;
@@ -161,4 +160,9 @@ button:hover:before, button:focus:before {
 
 button:active {
   transform: scale(0.9);
+}
+
+.usuarios {
+  display: flex;
+  flex-wrap: wrap;
 }
