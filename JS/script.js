@@ -23,28 +23,30 @@ inputs.forEach((input) => {
 //Salvando dados para fazer login
 
 function entrar() {
-  var email = document.querySelector("#email");
-  var senha = document.querySelector("#passwd");
+  var email = document.querySelector("#email").value;
+  var senha = document.querySelector("#passwd").value;
 
-  var users = JSON.parse(localStorage.getItem("listaUser, users")) || [];
+  console.log({ email, senha });
 
-  var usuarioEncontrado = users.filter(function (usuario) {   
-    return usuario.email === email.value && usuario.senha === senha.value;
+  var users = JSON.parse(localStorage.getItem("users")) || [
+    {
+      email: "admin@gmail.com",
+      password: "admin",
+    },
+  ];
+
+  console.log(users);
+
+  var usuarioEncontrado = users.filter(function (u) {
+    return u.email === email && u.password === senha;
   })[0]; // para acessar o primeiro elemento do novo array
+
+  console.log(usuarioEncontrado);
 
   if (usuarioEncontrado) {
     window.location.href = "/html/usuario.html";
   } else {
-    if (users.length === 0) {
-      let userAdm = {
-        email: "admin@gmail.com",
-        password: "admin",
-      };
-      localStorage.setItem("users", JSON.stringify([userAdm]));
-      window.location.href = "/html/usuario.html";
-    } else {
-      alert("Email ou Senha nao cadastrados");
-    }
+    alert("Email ou Senha nao cadastrados");
   }
 }
 
@@ -56,17 +58,3 @@ document.addEventListener("keypress", function (e) {
     btn.click();
   }
 });
-
-// if (email.value == "admin@gmail.com" && senha.value == "admin") {
-//   let novoUsuario;
-//   novoUsuario = {
-//     email: "admin@gmail.com",
-//     password: "admin",
-//   };
-//   localStorage.setItem("users", JSON.stringify(novoUsuario));
-
-//   window.location.href = "/html/usuario.html";
-// } else {
-//   alert("Email ou Senha nao cadastrados");
-// }
-// console.log(email, senha);
