@@ -9,11 +9,7 @@ function cadastrar(){
     const nome = document.querySelector("#nome")
     const email = document.querySelector("#email")
     const senha = document.querySelector("#senha")
-    let listaUserStorage = JSON.parse(localStorage.getItem('listaUser')) || [{
-        'nome': "Carlos",
-        'email': "carlos@gmail.com",
-        'senha': "12345678"
-    }]
+    let listaUserStorage = JSON.parse(localStorage.getItem('listaUser')) || []
 
     let novoUsuario = {
         'nome': nome.value,
