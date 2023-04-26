@@ -20,8 +20,6 @@ inputs.forEach((input) => {
   input.addEventListener("blur", remFocus);
 });
 
-
-
 //Salvando dados para fazer login
 
 function entrar() {
@@ -30,7 +28,7 @@ function entrar() {
 
   var users = JSON.parse(localStorage.getItem("listaUser, users")) || [];
 
-  var usuarioEncontrado = users.filter(function (usuario) {
+  var usuarioEncontrado = users.filter(function (usuario) {   
     return usuario.email === email.value && usuario.senha === senha.value;
   })[0]; // para acessar o primeiro elemento do novo array
 
@@ -40,20 +38,15 @@ function entrar() {
     if (users.length === 0) {
       let userAdm = {
         email: "admin@gmail.com",
-        password: "admin"
+        password: "admin",
       };
-      localStorage.setItem('users', JSON.stringify([userAdm]));
+      localStorage.setItem("users", JSON.stringify([userAdm]));
       window.location.href = "/html/usuario.html";
     } else {
       alert("Email ou Senha nao cadastrados");
     }
   }
 }
-
-
-
-
-
 
 // Entrar com Enter
 document.addEventListener("keypress", function (e) {
@@ -63,24 +56,6 @@ document.addEventListener("keypress", function (e) {
     btn.click();
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // if (email.value == "admin@gmail.com" && senha.value == "admin") {
 //   let novoUsuario;
